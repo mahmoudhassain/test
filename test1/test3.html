@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>entar email </title>
+
+    <style>
+        body {
+            font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+            background: linear-gradient(135deg, #4facfe, #00f2fe);
+            height: 100vh;
+            margin: 0;
+
+            /* توسيط المحتوى */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .form-container {
+            background: #ffffff;
+            padding: 30px 40px;
+            border-radius: 12px;
+            width: 320px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        label {
+            display: block;
+            text-align: right;
+            margin-bottom: 5px;  
+            color: #555;
+            font-weight: 300;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            font-size: 14px;
+        }
+
+        input:focus {
+            outline: none;
+            border-color: #4facfe;
+        }
+
+        input[type="submit"] {
+            background: #4facfe;
+            color: #fff;
+            border: none;
+            font-size: 13px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background: #007adf;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="form-container">
+    <h1>entar email </h1>
+
+    <form action="/submit" method="post">
+        <label for="name">entar name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email"> entar email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">entar password </label>
+        <input type="password" id="password" name="password" required>
+
+        <input type="submit" value="submit">
+    </form>
+</div>
+
+</body>
+</html>
